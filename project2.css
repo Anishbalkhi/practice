@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(19, 131, 131);
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.container img{
+position: relative;
+min-height: 100px;
+transition: all 3s ease-in-out 1s;
+}
+
+.container img:hover{
+    
+}

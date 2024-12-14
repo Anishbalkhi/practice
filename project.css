@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(200, 26, 26); */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main img{
+    height: 700px;
+    position: relative;
+    z-index: 99;
+    object-fit: cover;
+
+}
+
+#scroll-div{
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    height: 100px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#scroll-div::-webkit-scrollbar{
+display: none;
+}
+
+#scroll-div h1{
+    display: inline-block;
+    font-size: 105px;
+    text-transform: uppercase;
+    font-family: "Work Sans", sans-serif;
+    margin-right: 30px;
+    font-weight: 1000;
+    letter-spacing: 5px;
+    animation: scroll 1s ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+
+#scroll-div2{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    height: 100px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    z-index: 100;
+
+}
+
+#scroll-div2::-webkit-scrollbar{
+display: none;
+}
+
+#scroll-div2 h1{
+    display: inline-block;
+    font-size: 105px;
+    text-transform: uppercase;
+    font-family: "Work Sans", sans-serif;
+    margin-right: 10px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: transparent;
+    word-spacing: 5px;
+    
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    animation: scroll1 1s linear;
+    animation-iteration-count: infinite;
+    
+    
+}
+
+
+#scroll-div3{
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    height: 100px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#scroll-div3::-webkit-scrollbar{
+display: none;
+}
+
+#scroll-div3 h1{
+    display: inline-block;
+    font-size: 105px;
+    text-transform: uppercase;
+    font-family: "Work Sans", sans-serif;
+    
+    font-weight: 900;
+    letter-spacing: 5px;
+    animation: scroll 1s linear;
+    animation-iteration-count: infinite;
+    
+}
+
+#text{
+    font-family: "Work Sans", sans-serif;
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    width: 50%;
+    z-index: 110;
+    top: 12%;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    /* background-color: aquamarine; */
+}
+
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0px);
+    }
+    
+100%{
+    transform: translateX(-100%);
+}
+}
+
+
+@keyframes scroll1 {
+    0%{
+        transform: translateX(0px);
+    }
+    
+100%{
+    transform: translateX( calc(100% - 10px));
+}
+}
